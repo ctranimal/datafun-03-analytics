@@ -29,3 +29,9 @@ __pycache__/
 # Jupyter Notebook (basic ignore)
 # ----------------------------------------
 .ipynb_checkpoints
+
+# ----------------------------------------
+# ignore some logs and sameple data directories for testing this project
+# ----------------------------------------
+logs
+example_data
