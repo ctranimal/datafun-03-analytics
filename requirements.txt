@@ -344,3 +344,20 @@ seaborn
 # NETWORKING / HTTP
 # ======================================================
 requests
+# ======================================================
+# EXCEL FILE READING AND WRITING
+# ======================================================
+
+# Primary library for Excel (both .xls and .xlsx); handles formulas, charts, formatting (~8 MB)
+# Used by pandas and other libraries.
+openpyxl
+
+# For writing advanced Excel files (.xlsx)
+# xlsxwriter
+
+# Only for reading older Excel files (.xls) since version 2
+# xlrd
+
+# Optional: For unified access to different spreadsheet formats
+# pyexcel
+
