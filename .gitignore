@@ -34,4 +34,4 @@ __pycache__/
 # ignore some logs and sameple data directories for testing this project
 # ----------------------------------------
 logs
-example_data
+example*
