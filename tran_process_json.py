@@ -54,5 +54,8 @@ import util_project03
 
 if __name__ == "__main__":
     logger.info("Starting JSON processing...")
+    util_project03.set_globalvars_for_data_folders_empty() # call this function to SET global vars FETCHED_DATA_DIR, PROCESSED_DIR
+    logger.info(f"Global vars FETCHED_DATA_DIR: {util_project03.FETCHED_DATA_DIR}")
+    logger.info(f"Global vars PROCESSED_DIR: {util_project03.PROCESSED_DIR}") 
     #process_json_file()
     logger.info("JSON processing complete.")

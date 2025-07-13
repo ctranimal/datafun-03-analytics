@@ -115,7 +115,7 @@ def process_json_file():
 #####################################
 
 if __name__ == "__main__":
-    logger.info("Starting JSON processing...")
+    logger.info("Starting JSON processing...")  
     process_json_file()
     logger.info("JSON processing complete.")
     
