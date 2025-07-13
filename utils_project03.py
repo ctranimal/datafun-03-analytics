@@ -1,5 +1,5 @@
 """
-Logger Setup Script
+
 File: utils_project03.py
 
 This script provides some basic upkeeping utilities for project 03
