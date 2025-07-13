@@ -89,12 +89,6 @@ def process_csv_file():
     # Log the processing of the CSV file
     logger.info(f"Processed CSV file: {input_file}, Statistics saved to: {output_file}")
 
-#####################################
-# Main Execution
-#####################################
 
-if __name__ == "__main__":
-    logger.info("Starting CSV processing...")
-    process_csv_file()
-    logger.info("CSV processing complete.")
+
     
