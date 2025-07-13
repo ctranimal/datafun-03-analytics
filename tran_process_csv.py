@@ -17,14 +17,15 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parent))
 
 # Import local modules
 from utils_logger import logger
+import util_project03
 
 #####################################
 # Declare Global Variables
 #####################################
 
-FETCHED_DATA_DIR: str = "ctran_data"
-PROCESSED_DIR: str = "ctran_processed"
-PROJECT_PREFIX: str = "** PRJ-03 ** "
+#Note: these 2 global vars are moved to utils_project_03.py
+#FETCHED_DATA_DIR
+#PROCESSED_DIR
 
 #####################################
 # Define Functions
@@ -92,8 +93,8 @@ def analyze_ladder_score(file_path: pathlib.Path) -> dict:
 def process_csv_file():
     """Read a CSV file, analyze Ladder score, and save the results."""
     
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "2020_happiness.csv")
-    output_file = pathlib.Path(PROCESSED_DIR, "happiness_ladder_score_stats.txt")
+    input_file = pathlib.Path(util_project03.FETCHED_DATA_DIR, "2020_happiness.csv")
+    output_file = pathlib.Path(util_project03.PROCESSED_DIR, "happiness_ladder_score_stats.txt")
     
     stats = analyze_ladder_score(input_file)
 
@@ -121,6 +122,9 @@ def process_csv_file():
 #####################################
 
 if __name__ == "__main__":
-    logger.info(PROJECT_PREFIX+"Starting CSV processing...")
+    logger.info("Starting CSV processing...")
+    util_project03.set_globalvars_for_data_folders_empty() # call this function to SET global vars FETCHED_DATA_DIR, PROCESSED_DIR
+    logger.info(f"Global vars FETCHED_DATA_DIR: {util_project03.FETCHED_DATA_DIR}")
+    logger.info(f"Global vars PROCESSED_DIR: {util_project03.PROCESSED_DIR}")   
     process_csv_file()
-    logger.info(PROJECT_PREFIX+"CSV processing complete.")
+    logger.info("CSV processing complete.")

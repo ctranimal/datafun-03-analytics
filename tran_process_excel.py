@@ -19,14 +19,16 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parent))
 
 # Import local modules
 from utils_logger import logger
+import util_project03
 
 #####################################
 # Declare Global Variables
 #####################################
 
-FETCHED_DATA_DIR: str = "ctran_data"
-PROCESSED_DIR: str = "ctran_processed"
-PROJECT_PREFIX: str = "** PRJ-03 ** "
+#Note: these 2 global vars are moved to utils_project_03.py
+#FETCHED_DATA_DIR
+#PROCESSED_DIR
+
 
 #####################################
 # Define Functions
@@ -38,6 +40,6 @@ PROJECT_PREFIX: str = "** PRJ-03 ** "
 #####################################
 
 if __name__ == "__main__":
-    logger.info(PROJECT_PREFIX+"Starting Excel processing...")
+    logger.info("Starting Excel processing...")
     #process_excel_file()
-    logger.info(PROJECT_PREFIX+"Excel processing complete.")
+    logger.info("Excel processing complete.")
