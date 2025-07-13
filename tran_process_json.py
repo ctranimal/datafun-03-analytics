@@ -43,12 +43,12 @@ import utils_project03
 #Note: these 2 global vars are moved to utils_project_03.py
 #FETCHED_DATA_DIR
 #PROCESSED_DIR
+ISS_ASTRONAUTS_LIST: list = []
+TIANGONG_ASTRONAUTS_LIST: list = []
 
 #####################################
 # Define Functions
 #####################################
-
-# TODO: Add or replace this with a function that reads and processes your JSON file
 
 def count_astronauts_by_craft(file_path: pathlib.Path) -> dict:
     """Count the number of astronauts on each spacecraft from a JSON file."""
@@ -78,7 +78,14 @@ def count_astronauts_by_craft(file_path: pathlib.Path) -> dict:
                 # If the craft is not in the dictionary, initialize it to 0
                 # Add 1 to the count for the current craft
                 craft_counts_dictionary[craft] = craft_counts_dictionary.get(craft, 0) + 1
+                if(craft == "ISS"):
+                    ISS_ASTRONAUTS_LIST.append(person_dictionary.get("name", ""))
+                elif(craft =="Tiangong"):
+                    TIANGONG_ASTRONAUTS_LIST.append(person_dictionary.get("name", ""))
 
+
+            #logger.info(f"--> ISS_ASTRONAUTS_LIST is {ISS_ASTRONAUTS_LIST}\n")
+            #logger.info(f"--> TIANGONG_ASTRONAUTS_LIST is {TIANGONG_ASTRONAUTS_LIST}\n")
             # Return the dictionary with counts of astronauts by spacecraft    
             return craft_counts_dictionary
     except Exception as e:
@@ -91,8 +98,8 @@ def process_json_file():
     input_file: pathlib.Path = pathlib.Path(utils_project03.FETCHED_DATA_DIR, "astros.json")
     output_file: pathlib.Path = pathlib.Path(utils_project03.PROCESSED_DIR, "json_astronauts_by_craft.txt")
     
-    # TODO: Call your new function to process YOUR JSON file
-    # TODO: Create a new local variable to store the result of the function call
+    # Call your new function to process YOUR JSON file
+    # Create a new local variable to store the result of the function call
     craft_counts = count_astronauts_by_craft(input_file)
 
     # Create the output directory if it doesn't exist
@@ -100,10 +107,21 @@ def process_json_file():
     
     # Open the output file in write mode and write the results
     with output_file.open('w') as file:
-        # TODO: Update the output to describe your results
+        # Update the output to describe your results
         file.write("Astronauts by spacecraft:\n")
         for craft, count in craft_counts.items():
             file.write(f"{craft}: {count}\n")
+    
+        file.write(f"List of ISS Austronauts:{str(ISS_ASTRONAUTS_LIST)}\n")
+        file.write(f"List of Tiangong Austronauts:{TIANGONG_ASTRONAUTS_LIST}\n")
+        file.write("--> BELOW HERE: A list of two-members teams (with one of each of ISS & Tiangong) are listed here\n")
+
+        counter: int = 0
+
+        for tiangong_name in TIANGONG_ASTRONAUTS_LIST:
+            for iss_name in ISS_ASTRONAUTS_LIST:
+                counter += 1
+                file.write(f"-->{str(counter)}, {tiangong_name}, {iss_name}\n")
     
     # Log the processing of the JSON file
     logger.info(f"Processed JSON file: {input_file}, Results saved to: {output_file}")
