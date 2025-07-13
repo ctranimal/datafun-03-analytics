@@ -41,7 +41,7 @@ from utils_logger import logger
 
 FETCHED_DATA_DIR: str = "ctran_data"
 PROCESSED_DIR: str = "ctran_processed"
-PROJECT_PREFIX: str = "** PRJ-03 **"
+PROJECT_PREFIX: str = "** PRJ-03 ** "
 
 #####################################
 # Define Functions

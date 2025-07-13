@@ -90,5 +90,12 @@ def process_csv_file():
     logger.info(f"Processed CSV file: {input_file}, Statistics saved to: {output_file}")
 
 
+#####################################
+# Main Execution
+#####################################
 
+if __name__ == "__main__":
+    logger.info("Starting Excel processing...")
+    process_excel_file()
+    logger.info("Excel processing complete.")
     
