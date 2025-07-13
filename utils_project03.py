@@ -26,7 +26,7 @@ PROCESSED_DIR: str = ""
 # return False if the strings are empty
 # this is to ensure that the global variables are set only if they were empty
 def are_globalvars_for_data_folders_empty() -> bool:
-    logger.info(" * are_globalvars_for_data_folders_empty() is called")
+    #logger.info(" * are_globalvars_for_data_folders_empty() is called")
     if(FETCHED_DATA_DIR == ""): return True
     if(PROCESSED_DIR == ""): return True
 
@@ -43,6 +43,6 @@ def set_globalvars_for_data_folders_empty() -> None:
     if(are_globalvars_for_data_folders_empty()):
         FETCHED_DATA_DIR = "example_data"
         PROCESSED_DIR = "tran_processed"
-        logger.info(f"after setting: Global vars FETCHED_DATA_DIR: {FETCHED_DATA_DIR}")
-        logger.info(f"after setting: Global vars PROCESSED_DIR: {PROCESSED_DIR}")          
+        #logger.info(f"after setting: Global vars FETCHED_DATA_DIR: {FETCHED_DATA_DIR}")
+        #logger.info(f"after setting: Global vars PROCESSED_DIR: {PROCESSED_DIR}")          
 
