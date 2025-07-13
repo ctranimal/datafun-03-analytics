@@ -19,7 +19,7 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parent))
 
 # Import local modules
 from utils_logger import logger
-import util_project03
+import utils_project03
 
 #####################################
 # Declare Global Variables
@@ -55,8 +55,8 @@ def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str)
 
 if __name__ == "__main__":
     logger.info("Starting Excel processing...")
-    util_project03.set_globalvars_for_data_folders_empty() # call this function to SET global vars FETCHED_DATA_DIR, PROCESSED_DIR
-    logger.info(f"Global vars FETCHED_DATA_DIR: {util_project03.FETCHED_DATA_DIR}")
-    logger.info(f"Global vars PROCESSED_DIR: {util_project03.PROCESSED_DIR}")     
+    utils_project03.set_globalvars_for_data_folders_empty() # call this function to SET global vars FETCHED_DATA_DIR, PROCESSED_DIR
+    logger.info(f"Global vars FETCHED_DATA_DIR: {utils_project03.FETCHED_DATA_DIR}")
+    logger.info(f"Global vars PROCESSED_DIR: {utils_project03.PROCESSED_DIR}")     
     #process_excel_file()
     logger.info("Excel processing complete.")

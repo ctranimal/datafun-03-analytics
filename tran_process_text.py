@@ -15,7 +15,7 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parent))
 
 # Import local modules
 from utils_logger import logger
-import util_project03
+import utils_project03
 
 #####################################
 # Declare Global Variables
@@ -35,8 +35,8 @@ import util_project03
 
 if __name__ == "__main__":
     logger.info("Starting text processing...")
-    util_project03.set_globalvars_for_data_folders_empty() # call this function to SET global vars FETCHED_DATA_DIR, PROCESSED_DIR
-    logger.info(f"Global vars FETCHED_DATA_DIR: {util_project03.FETCHED_DATA_DIR}")
-    logger.info(f"Global vars PROCESSED_DIR: {util_project03.PROCESSED_DIR}")   
+    utils_project03.set_globalvars_for_data_folders_empty() # call this function to SET global vars FETCHED_DATA_DIR, PROCESSED_DIR
+    logger.info(f"Global vars FETCHED_DATA_DIR: {utils_project03.FETCHED_DATA_DIR}")
+    logger.info(f"Global vars PROCESSED_DIR: {utils_project03.PROCESSED_DIR}")   
     #process_text_file()
     logger.info("Text processing complete.")
