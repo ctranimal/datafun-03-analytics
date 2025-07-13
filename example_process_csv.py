@@ -95,7 +95,7 @@ def process_csv_file():
 #####################################
 
 if __name__ == "__main__":
-    logger.info("Starting Excel processing...")
-    process_excel_file()
-    logger.info("Excel processing complete.")
+    logger.info("Starting csv processing...")
+    process_csv_file()
+    logger.info("CSV processing complete.")
     
