@@ -1,9 +1,9 @@
-#Project Name: datafun-03-analytics
+Project Name: datafun-03-analytics
 
-##Description:
+Description:
 This project demonstrates how to fetch and process various types of data (Excel, JSON, text, and CSV) using Python.
 
-##The repository includes:
+The repository includes:
 
 ### Sample / Starting code:
 _ Four example fetchers: Scripts to retrieve data from the web. With filenames: example_get_*.py
@@ -51,7 +51,7 @@ python3 tran_process_text.py
 
 Then, the processed files will be created at ~/Repos/datafun-03-analytics/tran_processed folder
 
-### Files descriptions for example fetchers:
+### Files descriptions for example fetchers and my implementation files tran_process_*.py
 example_get_csv.py  : This file fetches a sample csv file from the internet and make a copy locally to example_data folder.
 example_get_excel.py  : This file fetches a sample excel file from the internet and make a copy locally to example_data folder.
 example_get_json.py  : This file fetches a sample JASON file from the internet and make a copy locally to example_data folder.
