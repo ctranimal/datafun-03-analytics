@@ -1,85 +1,67 @@
-datafun-03-analytics
+#Project Name: datafun-03-analytics
+
+##Description:
 This project demonstrates how to fetch and process various types of data (Excel, JSON, text, and CSV) using Python.
 
-The repository includes:
+##The repository includes:
 
-Four example fetchers: Scripts to retrieve data from the web.
-Four example processors: Scripts to analyze and process the fetched data.
-Start by running the examples to understand their functionality, and then build your own scripts to fetch and process data of your choice (using each of these example types).
+### Sample / Starting code:
+_ Four example fetchers: Scripts to retrieve data from the web. With filenames: example_get_*.py
+_ Four example processors: Scripts to analyze and process the fetched data. With filesnames: example_process_*.py
 
-Project Requirements
-VS Code
-Git
-Python
-Professional Python Workflow
-See pro-analytics-01
+### My implementation for credit:
+_ Four files with filenames: tran_process_*.py
 
-Commands to Manage Virtual Environment
+Commands to Manage Virtual Environment (On MacOS terminal)
+cd ~/Repos/datafun-03-analytics
+python3 -m venv .venv
+./.venv/bin/activate
 
-py -m venv .venv
-.\.venv\Scripts\activate
+Note: requirements.txt is where the list of required packages are listed 
+Use following commands to ensure the .venv environment folder has all required packages installed
 py -m pip install --upgrade pip setuptools wheel
 py -m pip install --upgrade -r requirements.txt
+
 Commands to Run Python Scripts
 Remember to activate your .venv (and install packages if they haven't been installed yet) before running files. Verify that all required packages are included in requirements.txt (and have NOT been commented out).
 
-py example_get_csv.py
-py example_get_excel.py
-py example_get_json.py
-py example_get_text.py
+Firstly, run the example_get_*.py to obtain the required data files for processing by issuing these commands
 
-py example_process_csv.py
-py example_process_excel.py
-py example_process_json.py
-py example_process_text.py
+python3 example_get_csv.py
+python3 example_get_excel.py
+python3 example_get_json.py
+python3 example_get_text.py
 
-py yourname_get_csv.py
-py yourname_get_excel.py
-py yourname_get_json.py
-py yourname_get_text.py
+Then, the sample data files will be created at ~/Repos/datafun-03-analytics/example_data folder
 
-py yourname_process_csv.py
-py yourname_process_excel.py
-py yourname_process_json.py
-py yourname_process_text.py
+Run the following commands for files example_process_*.py to get a taste of what the example_process*.py should accomplish
+python3 example_process_csv.py
+python3 example_process_excel.py
+python3 example_process_json.py
+python3 example_process_text.py
 
-Commands to Git add-commit-push
-git add .
-git commit -m "custom message"
-git push -u origin main
-Create and Run Your Data Fetchers
-Find data files on the web for each type (CSV, Excel, JSON, and text).
-Create your own Python script to fetch each type of data and save it in a folder named data.
-Name your scripts:
-yourname_get_csv.py
-yourname_get_excel.py
-yourname_get_json.py
-yourname_get_text.py
-Implement your data-processing logic in small steps:
-Fetch data for one file type.
-Test, verify, and Git add-commit-push.
-Create and Run Your Data Processors
-Determine a simple metric from each of your data files.
-Create your own Python script to read the data, process it, and save it in a folder named data_processed.
-Name your scripts:
-yourname_process_csv.py
-yourname_process_excel.py
-yourname_process_json.py
-yourname_process_text.py
-Work incrementally, using git add-commit-push after each bit of progress.
-Update README.md to Describe Your Work
-In your README.md, list each of your fetchers with a short description.
-In your README.md, list each of your processors with a short description of what it does.
-Include the execution commands to run your fetchers and processors.
-Helpful Documentation
-If you're unsure about any of the setup steps or tools, consult these resources:
+Then, the sample processed files will be created at ~/Repos/datafun-03-analytics/example_processed folder
 
-requests library documentation
-Tips
-Use descriptive filenames for the data you fetch - and proper file extensions.
-Work incrementally—verify each small step works before moving to the next.
-The examples are required reading - use them to learn and understand first.
-Test each script carefully before proceeding.
-Use meaningful commit messages when pushing to GitHub to document your progress.
-Review Commit History
-Once your project is complete, review your commit history in GitHub under the Commits tab. Ensure your commit messages are clear and professional.
+Now, to run my implementation of the *_process_*.py files, run the following commands
+
+python3 tran_process_csv.py
+python3 tran_process_excelpy
+python3 tran_process_json.py
+python3 tran_process_text.py
+
+Then, the processed files will be created at ~/Repos/datafun-03-analytics/tran_processed folder
+
+### Files descriptions for example fetchers:
+example_get_csv.py  : This file fetches a sample csv file from the internet and make a copy locally to example_data folder.
+example_get_excel.py  : This file fetches a sample excel file from the internet and make a copy locally to example_data folder.
+example_get_json.py  : This file fetches a sample JASON file from the internet and make a copy locally to example_data folder.
+example_get_text.py  : This file fetches a sample TEXT file (about Romeo play) from the internet and make a copy locally to example_data folder.
+
+
+tran_process_csv.py   : This file process a sample CSV file from example_data folder, providing some descriptive statistics data such as: Min/Max/Mean/Standard Deviation and info on the richest/poorest countries with associated GDP data. The output file is located at the local tran_processed folder
+
+tran_process_excel.py   : This file process a sample EXCEL file from example_data folder, The output file is located at the local tran_processed folder. The output file contain data such as: how many times all software tools (GitHub, Microsoft Word, Cannvas ...) were mentioned in the Excel cells
+
+tran_process_json.py   : This file process a sample JASON file from example_data folder, The output file is located at the local tran_processed folder. The output file contain data such as: how many astronauts (and their names) associated with ISS and Tiangong teams. It then list all 27 teams of two members with one from each of ISS and Tiangong.
+
+tran_process_text.py   : This file process a sample TEXT file from example_data folder, The output file is located at the local tran_processed folder. The output file contain data such as: how many time Speaking Actors lines are there. Usually, such lines would contain ALL CAPS. Thus, the script tran_process_test.py would analyze and summarize how many such Speaking Actors occurred.

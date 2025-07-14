@@ -1894,3 +1894,10 @@
 2025-07-13 19:58:20.100 | INFO     | __main__:<module>:128 - Global vars PROCESSED_DIR: tran_processed
 2025-07-13 19:58:20.104 | INFO     | __main__:process_csv_file:117 - Processed CSV file: example_data/2020_happiness.csv, Statistics saved to: tran_processed/happiness_ladder_score_stats.txt
 2025-07-13 19:58:20.104 | INFO     | __main__:<module>:130 - CSV processing complete.
+2025-07-13 20:09:13.991 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-07-13 20:09:13.992 | INFO     | __main__:<module>:125 - Starting CSV processing...
+2025-07-13 20:09:13.992 | INFO     | utils_project03:set_globalvars_for_data_folders_empty:42 -  * set_globalvars_for_data_folders_empty() is called
+2025-07-13 20:09:13.992 | INFO     | __main__:<module>:127 - Global vars FETCHED_DATA_DIR: example_data
+2025-07-13 20:09:13.992 | INFO     | __main__:<module>:128 - Global vars PROCESSED_DIR: tran_processed
+2025-07-13 20:09:13.994 | INFO     | __main__:process_csv_file:117 - Processed CSV file: example_data/2020_happiness.csv, Statistics saved to: tran_processed/happiness_ladder_score_stats.txt
+2025-07-13 20:09:13.994 | INFO     | __main__:<module>:130 - CSV processing complete.
