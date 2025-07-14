@@ -1,0 +1,23 @@
+Occurrences of 'Romeo': 311
+Below are the names of Speaking Actors (and how many times they occurred)
+SAMPSON: 20
+GREGORY: 15
+ABRAHAM: 5
+BENVOLIO: 64
+TYBALT: 17
+CAPULET: 50
+LADY CAPULET: 45
+MONTAGUE: 10
+LADY MONTAGUE: 2
+PRINCE: 16
+ROMEO: 163
+PARIS: 23
+JULIET: 118
+MERCUTIO: 62
+FRIAR LAURENCE: 55
+PETER: 13
+NURSE: 1
+BALTHASAR: 12
+FRIAR JOHN: 4
+PAGE: 4
+The total number of speaking-lines for all actors are: 699

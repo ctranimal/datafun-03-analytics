@@ -1,0 +1,52 @@
+Occurrences of 'Microsoft Word' in column F: 0
+Occurrences of 'Microsoft Word' in column D: 0
+Occurrences of 'Microsoft Word' in column B: 0
+Occurrences of 'Microsoft Word' in column C: 0
+Occurrences of 'Microsoft Word' in column E: 0
+Occurrences of 'Microsoft Word' in column A: 17
+
+Occurrences of 'Google' in column F: 0
+Occurrences of 'Google' in column D: 0
+Occurrences of 'Google' in column B: 0
+Occurrences of 'Google' in column C: 0
+Occurrences of 'Google' in column E: 0
+Occurrences of 'Google' in column A: 2
+
+Occurrences of 'Canvas' in column F: 0
+Occurrences of 'Canvas' in column D: 2
+Occurrences of 'Canvas' in column B: 0
+Occurrences of 'Canvas' in column C: 0
+Occurrences of 'Canvas' in column E: 0
+Occurrences of 'Canvas' in column A: 0
+
+Occurrences of 'VS code' in column F: 0
+Occurrences of 'VS code' in column D: 1
+Occurrences of 'VS code' in column B: 2
+Occurrences of 'VS code' in column C: 0
+Occurrences of 'VS code' in column E: 0
+Occurrences of 'VS code' in column A: 0
+
+Occurrences of 'Jupyter' in column F: 0
+Occurrences of 'Jupyter' in column D: 1
+Occurrences of 'Jupyter' in column B: 3
+Occurrences of 'Jupyter' in column C: 0
+Occurrences of 'Jupyter' in column E: 2
+Occurrences of 'Jupyter' in column A: 0
+
+Occurrences of 'GitHub' in column F: 4
+Occurrences of 'GitHub' in column D: 1
+Occurrences of 'GitHub' in column B: 33
+Occurrences of 'GitHub' in column C: 0
+Occurrences of 'GitHub' in column E: 1
+Occurrences of 'GitHub' in column A: 19
+
+***********************************
+  *** SUMMARY: *** 
+  Entire Excel file: Occurrences of ALL tools: 88
+
+  Entire Excel file: Occurrences of 'GitHub': 58. PERCENT: 65.91%
+  Entire Excel file: Occurrences of 'Microsoft Word': 17. PERCENT: 19.32%
+  Entire Excel file: Occurrences of 'Jupyter': 6. PERCENT: 6.82%
+  Entire Excel file: Occurrences of 'VS code': 3. PERCENT: 3.41%
+  Entire Excel file: Occurrences of 'Canvas': 2. PERCENT: 2.27%
+  Entire Excel file: Occurrences of 'Google': 2. PERCENT: 2.27%

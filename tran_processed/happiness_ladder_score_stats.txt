@@ -1,0 +1,10 @@
+Ladder Score Statistics:
+Minimum: 2.57
+Maximum: 7.81
+Mean: 5.47
+Standard Deviation: 1.11
+# Western Europe countries: 21
+# Northern American countries: 4
+# Total countries: 153
+# Richest country: Luxembourg with GDP: 11.45068073
+# Poorest country: Burundi with GDP: 6.492642403

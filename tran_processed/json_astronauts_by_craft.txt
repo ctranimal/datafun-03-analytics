@@ -1,0 +1,33 @@
+Astronauts by spacecraft:
+ISS: 9
+Tiangong: 3
+List of ISS Austronauts:['Oleg Kononenko', 'Nikolai Chub', 'Tracy Caldwell Dyson', 'Matthew Dominick', 'Michael Barratt', 'Jeanette Epps', 'Alexander Grebenkin', 'Butch Wilmore', 'Sunita Williams']
+List of Tiangong Austronauts:['Li Guangsu', 'Li Cong', 'Ye Guangfu']
+--> BELOW HERE: A list of two-members teams (with one of each of ISS & Tiangong) are listed here
+-->1, Li Guangsu, Oleg Kononenko
+-->2, Li Guangsu, Nikolai Chub
+-->3, Li Guangsu, Tracy Caldwell Dyson
+-->4, Li Guangsu, Matthew Dominick
+-->5, Li Guangsu, Michael Barratt
+-->6, Li Guangsu, Jeanette Epps
+-->7, Li Guangsu, Alexander Grebenkin
+-->8, Li Guangsu, Butch Wilmore
+-->9, Li Guangsu, Sunita Williams
+-->10, Li Cong, Oleg Kononenko
+-->11, Li Cong, Nikolai Chub
+-->12, Li Cong, Tracy Caldwell Dyson
+-->13, Li Cong, Matthew Dominick
+-->14, Li Cong, Michael Barratt
+-->15, Li Cong, Jeanette Epps
+-->16, Li Cong, Alexander Grebenkin
+-->17, Li Cong, Butch Wilmore
+-->18, Li Cong, Sunita Williams
+-->19, Ye Guangfu, Oleg Kononenko
+-->20, Ye Guangfu, Nikolai Chub
+-->21, Ye Guangfu, Tracy Caldwell Dyson
+-->22, Ye Guangfu, Matthew Dominick
+-->23, Ye Guangfu, Michael Barratt
+-->24, Ye Guangfu, Jeanette Epps
+-->25, Ye Guangfu, Alexander Grebenkin
+-->26, Ye Guangfu, Butch Wilmore
+-->27, Ye Guangfu, Sunita Williams
